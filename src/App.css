@@ -1,11 +1,6 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  overflow: hidden;
 }
 
 .App-header {
@@ -23,11 +18,66 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+.App-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.App-col {
+  width: 33.33%;
+  float: left;
+  padding: 10px 0 10px 0;
+}
+
+.App .Card > div:first-of-type {
+  margin-left: 15px;
+}
+
+@media (max-width: 1480px) {
+  .App .Card > div:first-of-type {
+    margin-left: 0px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 768px) {
+  .App-col {
+    width: 100%;
+    float: left;
+  }
+  .App-content {
+    padding-top: 175px;
+    margin: 5px;
+  }
+  .set-default {
+    padding-top: 65px;
+  }
+  .Header {
+    height: auto !important;
+  }
+  .Header-logo {
+    width: 100px;
+    text-align: left;
+  }
+  .Header input {
+    width: 100%;
+  }
+  .Header-form-user {
+    margin-top: 0px;
+    float: left;
+    text-align: left;
+  }
+  .Header button {
+    margin-top: 10px;
+  }
+  .Card {
+    max-width: 320px; /* lowest screen width 320 */
+    margin: 0 auto;
   }
 }

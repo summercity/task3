@@ -1,0 +1,17 @@
+.Pagination div, .Pagination-btn {
+    display:  inline-block;
+}
+
+.Pagination div {
+    padding: 10px;
+}
+
+.Pagination-btn {
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(93, 95, 93); /* Green */
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 2px;
+}

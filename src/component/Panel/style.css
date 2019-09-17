@@ -1,0 +1,14 @@
+.Panel {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.Panel-header {
+    border: solid 2px #808080;
+    border-radius:  2px;
+}
+
+.Panel-title {
+    font-size: 25px;
+    font-weight: 600;
+}
