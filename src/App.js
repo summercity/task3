@@ -115,7 +115,7 @@ export default class App extends React.Component {
   handleDelete  = (task) => {
     let { currentPage, tasks } = this.state;
 
-    tasks = tasks.filter(person => person.id != task.id);
+    tasks = tasks.filter(person => person.id !== task.id);
     
     let tasksList = paginatedData(tasks, currentPage, settings.page.size);
 
